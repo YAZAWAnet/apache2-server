@@ -1,0 +1,19 @@
+name: Docker Pull and Run
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - name: docker run -
+      docker run --rm -p 80:80 --name apache2-server ghcr.io/yazawanet/apache2-server:latest
+
+
+
