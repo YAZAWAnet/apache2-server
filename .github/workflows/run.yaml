@@ -15,5 +15,3 @@ jobs:
     - name: docker run -
       docker run --rm -p 80:80 --name apache2-server ghcr.io/yazawanet/apache2-server:latest
 
-
-
