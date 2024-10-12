@@ -16,7 +16,7 @@ jobs:
         username: ${{ github.actor }}
         password: ${{ secrets.GITHUB_TOKEN }}
     - name: Build the Docker Image
-      run: docker build . --file Dockerfile --tag ghcr.io/${{ github.repository }}/apache2-server:latest
+      run: docker build . --file Dockerfile --tag ghcr.io/yazawanet/apache2-server:latest
     - name: Push the Docker Image
-      run: docker push ghcr.io/${{ github.repository }}/apache2-server:latest
+      run: docker push ghcr.io/yazawanet/apache2-server:latest
 

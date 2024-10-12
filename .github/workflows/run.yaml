@@ -19,5 +19,5 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
     - name: Docker Run
-      run: docker run --rm -p 80:80 --name apache2-server ghcr.io/${{ github.repository }}/apache2-server:latest
+      run: docker run --rm -p 80:80 --name apache2-server ghcr.io/yazawanet/apache2-server:latest
 
