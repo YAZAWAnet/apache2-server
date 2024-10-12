@@ -11,7 +11,7 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
     - name: docker run -
-      docker run --rm -p 80:80 --name apache2-server ghcr.io/yazawanet/apache2-server:latest
+      run: docker run --rm -p 80:80 --name apache2-server ghcr.io/yazawanet/apache2-server:latest
 
